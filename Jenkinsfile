@@ -1,10 +1,6 @@
 pipeline {
     agent any
     
-    tools {
-        nodejs "NodeJS"
-    }
-    
     stages {
         stage('Build') {
             steps {
@@ -23,7 +19,6 @@ pipeline {
         stage('Package') {
             steps {
                 echo 'Packaging the application...'
-                // Add packaging steps here if needed
             }
         }
     }
